@@ -265,7 +265,7 @@ export default function ContactSection() {
               <div>
                 <h4 className="font-body font-semibold text-base text-mountain">Call Us</h4>
                 <a
-                  href="tel:+923479022013"
+                  href="tel:+923468486217"
                   className="font-body text-[0.9375rem] text-stone-color hover:text-emerald-green transition-colors"
                 >
                   +923468486217

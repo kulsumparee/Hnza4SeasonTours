@@ -8,7 +8,7 @@ const SocialLinks = () => {
                 </span>
 
                 <a
-                    href="https://wa.me/923479022013"
+                    href="https://wa.me/923468486217"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="WhatsApp"

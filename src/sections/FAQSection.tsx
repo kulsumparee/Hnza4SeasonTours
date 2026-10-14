@@ -7,7 +7,7 @@ const faqs = [
   {
     question: 'How do I book a tour with Hunza 4 Season Tours?',
     answer:
-      'Simply contact us via WhatsApp at +92 347 9022013, call us directly, or fill out the inquiry form below. We\'ll discuss your preferences and create a custom itinerary for you.',
+      'Simply contact us via WhatsApp at +923468486217, call us directly, or fill out the inquiry form below. We\'ll discuss your preferences and create a custom itinerary for you.',
   },
   {
     question: 'What is the best time to visit Pakistan?',

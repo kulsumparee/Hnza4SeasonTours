@@ -1,0 +1,22 @@
+/*
+Theme Name: Hunza 4 Season Tours
+Theme URI: https://hunza4seasontours.com
+Author: Hunza 4 Season Tours
+Author URI: https://hunza4seasontours.com
+Description: Premium private tours across Pakistan. A WordPress port of the Hunza 4 Season Tours React site - hero, destinations, itineraries, car rental, seasons, gallery, reviews, FAQ and WhatsApp contact, with region, place and tour detail pages.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hunza-4-season-tours
+Tags: travel, tours, one-column, custom-menu, featured-images, translation-ready
+*/
+
+/*
+ * The compiled Tailwind stylesheet lives in assets/css/main.css and is
+ * enqueued from functions.php. This file only carries the theme header.
+ * To rebuild the CSS after editing templates run `npm install && npm run build`
+ * inside the theme directory.
+ */

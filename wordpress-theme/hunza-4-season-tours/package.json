@@ -1,0 +1,14 @@
+{
+  "name": "hunza-4-season-tours-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build tooling for the Hunza 4 Season Tours WordPress theme (compiles Tailwind CSS).",
+  "scripts": {
+    "build": "tailwindcss -c tailwind.config.js -i assets/css/tailwind.css -o assets/css/main.css --minify",
+    "watch": "tailwindcss -c tailwind.config.js -i assets/css/tailwind.css -o assets/css/main.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}

@@ -1,0 +1,106 @@
+/*
+ * Tailwind source (ported from src/index.css). Compiled to main.css with
+ * `npm run build` inside the theme directory.
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 43 47% 59%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 42%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 43 47% 59%;
+    --radius: 0.5rem;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: rgba(201, 169, 98, 0.3);
+    color: #1a1a1a;
+  }
+
+  /* WordPress admin bar sits above the fixed nav. */
+  body.admin-bar [data-nav] {
+    top: var(--wp-admin--admin-bar--height, 32px);
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-[120px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-content {
+    @apply max-w-content mx-auto;
+  }
+
+  /* Basic typography for post/page content rendered via the_content(). */
+  .prose-content h2 { @apply font-display text-2xl md:text-3xl text-mountain mt-10 mb-4; }
+  .prose-content h3 { @apply font-display text-xl md:text-2xl text-mountain mt-8 mb-3; }
+  .prose-content p { @apply mb-5; }
+  .prose-content a { @apply text-emerald-green underline-offset-4 hover:underline; }
+  .prose-content ul { @apply list-disc pl-6 mb-5 space-y-2; }
+  .prose-content ol { @apply list-decimal pl-6 mb-5 space-y-2; }
+  .prose-content img { @apply rounded-2xl my-6; }
+  .prose-content blockquote { @apply border-l-4 border-warm-gold pl-5 italic my-6; }
+
+  /* Lenis smooth-scroll recommendations. */
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-stopped { overflow: hidden; }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
